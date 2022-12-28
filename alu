@@ -1,0 +1,69 @@
+#! /opt/homebrew/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/opt/homebrew/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x12c608020 .scope module, "multiplexer4" "multiplexer4" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "select";
+    .port_info 1 /INPUT 64 "a";
+    .port_info 2 /INPUT 64 "b";
+    .port_info 3 /INPUT 64 "c";
+    .port_info 4 /INPUT 64 "d";
+    .port_info 5 /OUTPUT 64 "out";
+P_0x12c609330 .param/l "DATA_W" 0 2 2, +C4<00000000000000000000000001000000>;
+v0x12c60ec50_0 .net *"_ivl_1", 0 0, L_0x12c6211f0;  1 drivers
+v0x12c620120_0 .net *"_ivl_13", 0 0, L_0x12c621600;  1 drivers
+v0x12c6201c0_0 .net *"_ivl_14", 31 0, L_0x12c621730;  1 drivers
+L_0x1300780a0 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x12c620270_0 .net *"_ivl_17", 30 0, L_0x1300780a0;  1 drivers
+L_0x1300780e8 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x12c620320_0 .net/2u *"_ivl_18", 31 0, L_0x1300780e8;  1 drivers
+v0x12c620410_0 .net *"_ivl_2", 31 0, L_0x12c621290;  1 drivers
+v0x12c6204c0_0 .net *"_ivl_20", 0 0, L_0x12c621850;  1 drivers
+v0x12c620560_0 .net *"_ivl_25", 0 0, L_0x12c621ab0;  1 drivers
+v0x12c620610_0 .net *"_ivl_26", 31 0, L_0x12c621ba0;  1 drivers
+L_0x130078130 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x12c620720_0 .net *"_ivl_29", 30 0, L_0x130078130;  1 drivers
+L_0x130078178 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x12c6207d0_0 .net/2u *"_ivl_30", 31 0, L_0x130078178;  1 drivers
+v0x12c620880_0 .net *"_ivl_32", 0 0, L_0x12c621d00;  1 drivers
+L_0x130078010 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x12c620920_0 .net *"_ivl_5", 30 0, L_0x130078010;  1 drivers
+L_0x130078058 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x12c6209d0_0 .net/2u *"_ivl_6", 31 0, L_0x130078058;  1 drivers
+v0x12c620a80_0 .net *"_ivl_8", 0 0, L_0x12c6213e0;  1 drivers
+o0x1300402e0 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0x12c620b20_0 .net "a", 63 0, o0x1300402e0;  0 drivers
+o0x130040310 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0x12c620bd0_0 .net "b", 63 0, o0x130040310;  0 drivers
+o0x130040340 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0x12c620d60_0 .net "c", 63 0, o0x130040340;  0 drivers
+o0x130040370 .functor BUFZ 64, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0x12c620df0_0 .net "d", 63 0, o0x130040370;  0 drivers
+v0x12c620ea0_0 .net "out", 63 0, L_0x12c621e80;  1 drivers
+v0x12c620f50_0 .net "out1", 63 0, L_0x12c621500;  1 drivers
+v0x12c621000_0 .net "out2", 63 0, L_0x12c6219d0;  1 drivers
+o0x130040430 .functor BUFZ 2, C4<zz>; HiZ drive
+v0x12c6210b0_0 .net "select", 1 0, o0x130040430;  0 drivers
+L_0x12c6211f0 .part o0x130040430, 0, 1;
+L_0x12c621290 .concat [ 1 31 0 0], L_0x12c6211f0, L_0x130078010;
+L_0x12c6213e0 .cmp/eq 32, L_0x12c621290, L_0x130078058;
+L_0x12c621500 .functor MUXZ 64, o0x130040310, o0x1300402e0, L_0x12c6213e0, C4<>;
+L_0x12c621600 .part o0x130040430, 0, 1;
+L_0x12c621730 .concat [ 1 31 0 0], L_0x12c621600, L_0x1300780a0;
+L_0x12c621850 .cmp/eq 32, L_0x12c621730, L_0x1300780e8;
+L_0x12c6219d0 .functor MUXZ 64, o0x130040370, o0x130040340, L_0x12c621850, C4<>;
+L_0x12c621ab0 .part o0x130040430, 1, 1;
+L_0x12c621ba0 .concat [ 1 31 0 0], L_0x12c621ab0, L_0x130078130;
+L_0x12c621d00 .cmp/eq 32, L_0x12c621ba0, L_0x130078178;
+L_0x12c621e80 .functor MUXZ 64, L_0x12c6219d0, L_0x12c621500, L_0x12c621d00, C4<>;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "./codes/multiplexer4.v";
