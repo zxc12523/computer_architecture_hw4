@@ -1,0 +1,64 @@
+00: xor  x00c x00b x00b
+04: addi x00d x00c 093
+08: slli x00e x00d 001
+0c: or   x00c x00d x00e
+10: addi x00b x00a 028
+14: xor  x00d x00c x00c
+18: ld   x005 000(x00a)
+1c: addi x006 x005 007
+20: bne  x00b x00a 014
+24: beq  x00a x00a 028
+28: addi x006 x00a 001
+2c: addi x00a x006 001
+30: beq  x00a x00a 010
+34: add  x005 x00c x006
+38: sd   x005 000(x00a)
+3c: beq  x00a x00a -014
+40: addi x00d x00c 07b
+44: addi x00c x00d 1c8
+48: beq  x00a x00a -030
+4c: finish
+50: finish
+54: finish
+58: finish
+5c: finish
+60: finish
+64: finish
+68: finish
+6c: finish
+70: finish
+74: finish
+78: finish
+7c: finish
+80: finish
+84: finish
+88: finish
+8c: finish
+90: finish
+94: finish
+98: finish
+9c: finish
+a0: finish
+a4: finish
+a8: finish
+ac: finish
+b0: finish
+b4: finish
+b8: finish
+bc: finish
+c0: finish
+c4: finish
+c8: finish
+cc: finish
+d0: finish
+d4: finish
+d8: finish
+dc: finish
+e0: finish
+e4: finish
+e8: finish
+ec: finish
+f0: finish
+f4: finish
+f8: finish
+fc: finish

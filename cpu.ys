@@ -1,7 +1,25 @@
 ### Read verilog files
+
+read_verilog ./codes/alu.v
+read_verilog ./codes/branch_unit.v
+read_verilog ./codes/control.v
 read_verilog ./codes/cpu.v
-read_verilog ./codes/data_memory.v
-read_verilog ./codes/instruction_memory.v
+read_verilog ./codes/EXE_buffer.v
+read_verilog ./codes/forward_unit.v
+read_verilog ./codes/hazard_unit.v
+read_verilog ./codes/ID_buffer.v
+read_verilog ./codes/IF_buffer.v
+read_verilog ./codes/imm_generator.v
+read_verilog ./codes/Mem_address.v
+read_verilog ./codes/MEM1_buffer.v
+read_verilog ./codes/MEM2_buffer.v
+read_verilog ./codes/multiplexer2.v
+read_verilog ./codes/multiplexer4.v
+read_verilog ./codes/multiplexer8.v
+read_verilog ./codes/multiplexer32.v
+read_verilog ./codes/pc.v
+read_verilog ./codes/register.v
+
 # include all your *.v files here except data_memory.v, 
 # instruction_memory.v and testbench.v
 
